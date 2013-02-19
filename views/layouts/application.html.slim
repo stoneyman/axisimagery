@@ -6,22 +6,21 @@ html
     == stylesheet_link_tag 'application'
     == javascript_include_tag 'application'
   body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container-fluid
+    .row-fluid
+      .span2
+        ul.sidebar
+          li: a( href='/index.html'         )= me
+          li: a( href='/architectural.html' )= page_name[:page2]
+          li: a( href='/interior.html'      )= page_name[:page3]
+          li: a( href='/virtual.html'       )= page_name[:page4]
+          li: a( href='/blog.html'          )= page_name[:page5]
+          li: a( href='/about.html'         )= page_name[:page6]
+          li: a( href='/contact.html'       )= page_name[:page7]
 
-          a.btn.btn-navbar( data-toggle='collapse' data-target='.nav-collapse' )
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.brand( href='#' )
-            | Axis Imagery
-          .nav-collapse
-            ul.nav
-              li:        a href=url             Home
-              li:        a href='/photos.html'  Photos
-              li:        a href='/about.html'   About
-              li:        a href='/contact.html' Contact
-
+      .span10
+        ul.mainwindow
+          li Enter some text here
+          li This should be a photo
+          li (img_src=/assets/images/photos/arch/YULDT_Front_desk_attendent.jpg)
     == yield
+  /! Footer below yield

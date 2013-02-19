@@ -1,0 +1,5 @@
+.item
+  == image_tag image_path(carousel_item[:path])
+  .carousel-caption
+    h4 A Caption
+    p A bit of text

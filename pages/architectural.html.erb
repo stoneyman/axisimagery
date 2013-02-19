@@ -1,0 +1,25 @@
+---
+title: Architectural Photography
+---
+<div class="page-header">
+  <h1><%= page_name[:page2]%>
+  <small>Commercial, Residential, and Industrial Architectural Photography</small>
+</h1>
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <h3>Samples</h3>
+    </div>
+    <div class="span10">
+      <h2>Slide Show</h2>
+      <div id="myCarousel" class="carousel">
+        <div class="carousel-inner">
+          <%= render_collection carousel_items('photos/arch'), 'shared/photos/carousel_item' %>
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
+  </div>
+</div>

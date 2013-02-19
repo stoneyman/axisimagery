@@ -1,0 +1,13 @@
+---
+title: Architectural Photography
+---
+h1= page_name[:page2]
+p Commercial, Residential, and Industrial Architectural Photography
+#myCarousel.carousel
+  .carousel-inner
+
+    - carousel_items('photos/arch').each do |carousel_item|
+      = render_partial 'shared/photos/carousel_item', :locals => { :carousel_item => carousel_item }
+  a.carousel-control.left(  href="#myCarousel" data-slide="prev" ) &lsaquo;
+  a.carousel-control.right( href="#myCarousel" data-slide="next" ) &rsaquo;
+

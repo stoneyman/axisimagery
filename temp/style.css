@@ -1,0 +1,60 @@
+/*
+Syntax error: Invalid CSS after "  $navbar-color": expected ":", was ";"
+        on line 11 of style.scss
+
+6: $radius: 10px;
+7: 
+8: #navbar {
+9:   $navbar-width: 80%;
+10:   $items: 5;
+11:   $navbar-color;
+12: 
+13:   width: $navbar-width;
+14:   height: 23px;
+15:   border-bottom: {
+16:     2px;
+
+Backtrace:
+style.scss:11
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:1014:in `expected'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:960:in `expected'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:955:in `tok!'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:435:in `variable'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:481:in `block_child'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:473:in `block_contents'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:462:in `block'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:456:in `ruleset'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:480:in `block_child'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:473:in `block_contents'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:58:in `stylesheet'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/scss/parser.rb:27:in `parse'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/engine.rb:326:in `_to_tree'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/engine.rb:299:in `_render'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/engine.rb:246:in `render'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:332:in `update_stylesheet'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:286:in `block (3 levels) in watch'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:51:in `call'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:51:in `block in file_event_fn'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `[]'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `block in run_events'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `each'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `run_events'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:37:in `block (3 levels) in start!'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `each'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `block (2 levels) in start!'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `each'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `block in start!'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/stoneyman/Projects/axisimagery/.bundle/bundle/ruby/1.9.1/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"  $navbar-color\": expected \":\", was \";\"\A         on line 11 of style.scss\A \A 6: $radius: 10px;\A 7: \A 8: #navbar {\A 9:   $navbar-width: 80%;\A 10:   $items: 5;\A 11:   $navbar-color;\A 12: \A 13:   width: $navbar-width;\A 14:   height: 23px;\A 15:   border-bottom: {\A 16:     2px;"; }

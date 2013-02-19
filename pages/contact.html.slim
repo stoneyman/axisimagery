@@ -1,5 +1,22 @@
 ---
 title: Contact Page
 ---
-h1= title
-p Find me in pages/contact.html.slim
+body
+  .container
+    .row-fluid
+      .span2
+        ul.nav.nav-pills
+          li.dropdown
+            a.dropdown-toggle( href='#' data-toggle='dropdown' )= page_name[:page1]
+            ul.dropdown-menu
+              li:  a( href='/architectural.html'  )= page_name[:page2]
+              li:  a( href='/interior.html'       )= page_name[:page3]
+              li:  a( href='/virtual_tour.html'   )= page_name[:page4]
+              li:  a( href='/travel.html'         )= page_name[:page5]
+          li:  a( href='/buttons.html'  )= page_name[:page5]
+          li:  a( href='/photos.html'  )= page_name[:page5]
+          li:  a( href='/about.html'   )= page_name[:page6]
+          li:  a( href='/contact.html' )= page_name[:page7]
+      .span10
+        h1= page_name[:page7]
+        p Find me in pages/contact.html.slim

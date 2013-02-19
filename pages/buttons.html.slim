@@ -1,0 +1,22 @@
+---
+title: Button Navigaiton
+---
+h1= page_name[:page5]
+p Find me in pages/buttons.html.slim
+.container
+  .row-fluid
+    .span2
+      ul.sidebar
+        li: a( href='#'                   )= me
+        li: a( href='/architectural.html' )= page_name[:page2]
+        li: a( href='/interior.html'      )= page_name[:page3]
+        li: a( href='/virtual.html'       )= page_name[:page4]
+        li: a( href='/blog.html'          )= page_name[:page5]
+        li: a( href='/about.html'         )= page_name[:page6]
+        li: a( href='/contact.html'       )= page_name[:page7]
+
+    .span10
+      ul.mainwindow
+        li Enter some text here
+        li This should be a photo
+        li (img_src=/assets/images/photos/arch/YULDT_Front_desk_attendent.jpg)

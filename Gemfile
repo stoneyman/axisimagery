@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'machined', '0.8.0'
+gem 'machined', '0.9.0'
 
 gem 'slim'
 gem 'sass', '~> 3.1'
